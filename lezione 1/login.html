@@ -10,26 +10,34 @@
 </head>
 <body>
     
-    <form class="form">
-        <h2>Login</h2>
-        <input type="text" name="email" id="email" placeholder="email">
-        <br><input type="password" name="password" id="password" placeholder="password">
-        <br><input type="submit" value="Login">
+    <div class="Section_top">
+        <img src="../logo/logo_travelista.png" alt="logo" class="logo">
 
-        <p>Don't have an account? <a href="">Register</a></p>
-        <p>Forgot <a href="">password</a> ?</p>
+        <form class="form">
+            <h2 class="login">Accedi</h2>
+            <p class="register">Non hai un account? <a href="">Registrati!</a></p>
 
-        <div class="icone">
-            <a class="facebook" role="button">
-                <i class="fa-brands fa-facebook-f"></i> </a>
-            <a class="twitter" role="button">
-                <i class="fab fa-twitter"></i> </a>
-            <a class="google" role="button"> 
-                <i class="fab fa-google"></i> </a>
-            <a class="instagram" role="button">
-                <i class="fab fa-instagram"></i> </a>
-        </div>
-    </form>
-    
+            <div class="input">
+                <input type="text" name="email" id="email" placeholder="Email" class="email">
+                <input type="password" name="password" id="password" placeholder="Password" class="password">
+            </div>
+
+            <p class="forgot">Password <a href="">dimenticata</a> ?</p>
+            <input type="checkbox" id="memodata" name="memodata" value="memodata" class="ck_memo" >
+            <label for="memodata" > Memorizza i dati</label>
+            <br><input type="submit" value="Conferma">
+
+
+
+            <p class="another">Oppure accedi con</p>
+
+            <div class="icons">
+                <a href="https://it-it.facebook.com/"><img src="../foto/face.png" alt="face"  width="30" height="30" class="face"></a>
+                <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&ifkv=AWnogHfdZrkG7ceUPxxvPISSmjLT4mKI1zJbSqlIvTMCyiNmD1h4mBM2AeQPzWpoMMLYkDStQgDoMg&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="../foto/google.png" alt="google" width="30" height="30"  class="google"></a>
+                <a href="https://www.icloud.com/mail"><img src="../foto/apple.png" alt="apple" width="27" height="33"  class="apple"></a>
+            </div>
+            
+        </form>
+    </div>
 </body>
 </html>
