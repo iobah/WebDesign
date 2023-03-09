@@ -30,14 +30,14 @@ a{
   
 .login{
   margin-top: 20px;
-  transform: translateX(-32%);
+  transform: translateX(5%);
   color: rgb(60, 60, 59);
   font-size: 22pt;
 }
 
 .register{
   margin-top: 15px;
-  transform: translateX(-19%);
+  transform: translateX(5%);
 }
 
 .input{
@@ -54,8 +54,7 @@ a{
   border: 1px solid white;
   border-radius: 25px;
   box-sizing: border-box;
-  /* margin-left: 5px;
-  margin-right: 5px; */
+  margin-left: 13px;
 }
 
 .email{
@@ -69,15 +68,14 @@ a{
 .forgot{
   display: inline;
   margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
 }
   
 .ck_memo{
   position: relative; 
   top: 2.5px;
   margin-top: 10px;
-  margin-left: 62px;
+  margin-left: 80px;
 }
   
 .form input[type="submit"] {
@@ -90,8 +88,7 @@ a{
   border-radius: 25px;
   cursor: pointer;
   margin-top: 35px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 14px;
 }
   
 .form input[type="submit"]:hover {
@@ -105,8 +102,7 @@ a{
 
 .icons{
   margin-top: 20px;
-  margin-left: 6px;
-  margin-right: 4px;
+  margin-left: 116px;
 }
 
 .google{
