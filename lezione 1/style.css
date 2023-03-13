@@ -68,14 +68,14 @@ a{
 .forgot{
   display: inline;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 17px;
 }
   
 .ck_memo{
   position: relative; 
   top: 2.5px;
   margin-top: 10px;
-  margin-left: 80px;
+  margin-left: 63px;
 }
   
 .form input[type="submit"] {
@@ -98,6 +98,19 @@ a{
 .another {
   text-align: center;
   margin-top: 30px;
+}
+
+.flag{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 310px;
+}
+
+.eye{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -45px;
+  cursor: pointer;
 }
 
 .icons{
