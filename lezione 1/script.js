@@ -1,8 +1,12 @@
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+let box = document.querySelector("#box");
+let isShown = false;
+
+function showBox() {
+  if (isShown) {
+    box.style.display = "none";
+    isShown = false;
   } else {
-    x.style.display = "none";
+    box.style.display = "block";
+    isShown = true;
   }
 }
