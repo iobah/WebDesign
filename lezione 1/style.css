@@ -12,14 +12,19 @@
   margin-left: 12%;
 }
 
-a{ 
+a{
   color:rgb(0, 166, 251);
+}
+
+a:hover{
+  color:rgb(5, 130, 202);
+  text-decoration: none;
 }
 
 
 /* Form styles */
 .form {
-    transform: translate(250%, -55%);
+    transform: translate(230%, -55%);
     width: 400px;
     height: 500px;
     padding: 20px;
@@ -116,6 +121,10 @@ a{
 .icons{
   margin-top: 20px;
   margin-left: 116px;
+}
+
+.icons:hover{
+  color: black;
 }
 
 .google{

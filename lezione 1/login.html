@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,20 +19,18 @@
         <img src="logo/logo_travelista.png" alt="logo" class="logo">
 
         <form class="form">
-            <p class="flag"><img src="foto/gb_flag.png" alt="gb" width="15" height="15" class="gb"> <img
-                    src="foto/italy_flag.png" alt="it" width="15" height="15" class="it"></p>
-            <h2 class="login">Accedi</h2>
-            <p class="register">Non hai un account? <a href="">Registrati!</a></p>
+            <h3 class="login">Accedi</h3>
+            <p class="register">Non hai un account? <a href="">Registrati</a></p>
 
             <div class="input">
-                <input type="text" name="email" id="email" placeholder="Email" class="email">
-                <input type="password" name="password" id="password" placeholder="Password" class="password"><img
-                    src="foto/eye_96692.png" alt="eye" width="21" height="11" class="eye">
+                <input type="text" name="email" id="email" placeholder="Email*" class="email" required>
+                <input type="password" name="password" id="password" placeholder="Password*" class="password" required><img src="foto/eye_96692.png" alt="eye"  width="21" height="11" class="eye">
             </div>
 
-            <p class="forgot">Password <a href="">dimenticata</a> ?</p>
-            <input type="checkbox" id="memodata" name="memodata" value="memodata" class="ck_memo">
-            <label for="memodata"> Memorizza i dati</label>
+            <p class="forgot"><a href="">Password dimenticata</a> ?</p>
+            <input type="checkbox" id="memodata" name="memodata" value="memodata" class="ck_memo" >
+            <label for="memodata" > Memorizza i dati</label>
+            <br><input type="submit" value="Conferma">
 
 
             <div class="popup" onclick="myFunction()">?
