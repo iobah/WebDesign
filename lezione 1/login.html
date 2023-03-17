@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="conteiner">
         <video muted autoplay loop class="videofullscreen">
             <source src="sfondo/video immagini login.mp4" type="video/mp4">
@@ -18,48 +20,60 @@
         <img src="logo/logo_travelista.png" alt="logo" class="logo">
 
         <form class="form">
-            <p class="flag"><img src="foto/gb_flag.png" alt="gb"  width="15" height="15" class="gb"> <img src="foto/italy_flag.png" alt="it"  width="15" height="15" class="it"></p>
+            <p class="flag"><img src="foto/gb_flag.png" alt="gb" width="15" height="15" class="gb"> <img
+                    src="foto/italy_flag.png" alt="it" width="15" height="15" class="it"></p>
             <h2 class="login">Accedi</h2>
             <p class="register">Non hai un account? <a href="">Registrati!</a></p>
 
             <div class="input">
                 <input type="text" name="email" id="email" placeholder="Email" class="email">
-                <input type="password" name="password" id="password" placeholder="Password" class="password"><img src="foto/eye_96692.png" alt="eye"  width="21" height="11" class="eye">
+                <input type="password" name="password" id="password" placeholder="Password" class="password"><img
+                    src="foto/eye_96692.png" alt="eye" width="21" height="11" class="eye">
             </div>
 
             <p class="forgot">Password <a href="">dimenticata</a> ?</p>
-            <input type="checkbox" id="memodata" name="memodata" value="memodata" class="ck_memo" >
-            <label for="memodata" > Memorizza i dati</label>
+            <input type="checkbox" id="memodata" name="memodata" value="memodata" class="ck_memo">
+            <label for="memodata"> Memorizza i dati</label>
 
 
-            
+            <div class="popup" onclick="myFunction()">?
+                <span class="popuptext" id="myPopup">Salva i dati per non doverli più inserire a mano</span>
+            </div>
 
 
-            <button onclick="showBox()">?</button>
-            
+            <script>
+                // When the user clicks on div, open the popup
+                function myFunction() {
+                    var popup = document.getElementById("myPopup");
+                    popup.classList.toggle("show");
+                }
+            </script>
 
-            <section class="box">
-                <div id="myDIV">
-                    This is my DIV element.
-                </div>
-            </section>
-            
-            
+
+
+
+
+
+
             <br><input type="submit" value="Conferma">
-
 
 
             <p class="another">Oppure accedi con</p>
 
             <div class="icons">
-                <a href="https://it-it.facebook.com/"><img src="foto/face.png" alt="face"  width="30" height="30" class="face"></a>
-                <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&ifkv=AWnogHfdZrkG7ceUPxxvPISSmjLT4mKI1zJbSqlIvTMCyiNmD1h4mBM2AeQPzWpoMMLYkDStQgDoMg&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="foto/google.png" alt="google" width="30" height="30"  class="google"></a>
-                <a href="https://www.icloud.com/mail"><img src="foto/apple.png" alt="apple" width="27" height="33"  class="apple"></a>
+                <a href="https://it-it.facebook.com/"><img src="foto/face.png" alt="face" width="30" height="30"
+                        class="face"></a>
+                <a
+                    href="https://accounts.google.com/ServiceLogin/identifier?elo=1&ifkv=AWnogHfdZrkG7ceUPxxvPISSmjLT4mKI1zJbSqlIvTMCyiNmD1h4mBM2AeQPzWpoMMLYkDStQgDoMg&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img
+                        src="foto/google.png" alt="google" width="30" height="30" class="google"></a>
+                <a href="https://www.icloud.com/mail"><img src="foto/apple.png" alt="apple" width="27" height="33"
+                        class="apple"></a>
             </div>
-            
+
         </form>
     </div>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
+
 </html>
