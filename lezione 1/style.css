@@ -46,9 +46,14 @@ a:hover{
 }
 
 .input{
-  margin-top: 20px;
+  margin-top: 20px;;
 }
-  
+
+::placeholder{
+  color: #575757;
+}
+
+
 .form input[type="text"],
 .form input[type="password"] {
   width: 92%;
