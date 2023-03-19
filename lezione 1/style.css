@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .logo{
   height: 12%;
   width: 30%;
@@ -12,18 +13,18 @@
 }
 
 a{
-  color:rgb(0, 166, 251);
+  color:#005EEB;
 }
 
 a:hover{
-  color:rgb(5, 130, 202);
+  color:#3385ff;
   text-decoration: none;
 }
 
 
 /* Form styles */
 .form {
-    transform: translate(230%, -55%);
+    transform: translate(250%, -55%);
     width: 400px;
     height: 500px;
     padding: 20px;
@@ -45,9 +46,14 @@ a:hover{
 }
 
 .input{
-  margin-top: 20px;
+  margin-top: 20px;;
 }
-  
+
+::placeholder{
+  color: #575757;
+}
+
+
 .form input[type="text"],
 .form input[type="password"] {
   width: 92%;
@@ -82,9 +88,9 @@ a:hover{
   margin-left: 63px;
 }
   
-.form input[type="submit"] {
+.confirm{
   width: 92%;
-  background-color: rgb(0, 166, 251);
+  background-color: #005EEB;
   color: #fff;
   padding: 14px 20px;
   margin: 8px 0;
@@ -93,11 +99,19 @@ a:hover{
   cursor: pointer;
   margin-top: 35px;
   margin-left: 14px;
+  font-weight: bolder;
 }
   
-.form input[type="submit"]:hover {
-  background-color: rgb(5, 130, 202);
+.confirm:hover{
+  background-color:#004bbb;
 }
+
+.conferma{
+  text-decoration: none;
+  color:#fff;
+}
+
+
 
 .another {
   text-align: center;
@@ -110,10 +124,21 @@ a:hover{
   margin-left: 310px;
 }
 
+.eye_closed{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -35px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
 .eye{
   position: absolute;
-  margin-top: 25px;
-  margin-left: -45px;
+  margin-top: 23px;
+  margin-left: -35px;
+  height: 13px;
+  width: 20px;
   cursor: pointer;
 }
 
@@ -122,9 +147,15 @@ a:hover{
   margin-left: 116px;
 }
 
-.icons:hover{
-  color: black;
+.face:hover{
+  /* background-color: #000000; */
+  opacity: 0.5;
 }
+
+/* 
+.icons:hover{
+  background-color: black;
+} */
 
 .google{
   margin-left: 20px;
@@ -133,6 +164,15 @@ a:hover{
 .apple{
   margin-left: 20px;
 }
+
+.google:hover{
+  opacity: 0.5;
+}
+
+.apple:hover{
+  opacity: 0.5;
+}
+
 
 /*<------------------------------->*/
 
@@ -154,6 +194,67 @@ body{
   height:100% !important;
   object-fit: cover;
   z-index: -100;
+}
+
+
+
+/*<------------------------------->*/
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -305%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: -18%;
+  left: 50%;
+  rotate: 180deg;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
 
