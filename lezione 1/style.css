@@ -13,11 +13,11 @@
 }
 
 a{
-  color:rgb(0, 166, 251);
+  color:#005EEB;
 }
 
 a:hover{
-  color:rgb(5, 130, 202);
+  color:#3385ff;
   text-decoration: none;
 }
 
@@ -88,9 +88,9 @@ a:hover{
   margin-left: 63px;
 }
   
-.form input[type="submit"] {
+.confirm{
   width: 92%;
-  background-color: rgb(0, 166, 251);
+  background-color: #005EEB;
   color: #fff;
   padding: 14px 20px;
   margin: 8px 0;
@@ -99,11 +99,19 @@ a:hover{
   cursor: pointer;
   margin-top: 35px;
   margin-left: 14px;
+  font-weight: bolder;
 }
   
-.form input[type="submit"]:hover {
-  background-color: rgb(5, 130, 202);
+.confirm:hover{
+  background-color:#004bbb;
 }
+
+.conferma{
+  text-decoration: none;
+  color:#fff;
+}
+
+
 
 .another {
   text-align: center;
@@ -116,10 +124,21 @@ a:hover{
   margin-left: 310px;
 }
 
+.eye_closed{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -35px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
 .eye{
   position: absolute;
-  margin-top: 25px;
-  margin-left: -45px;
+  margin-top: 23px;
+  margin-left: -35px;
+  height: 13px;
+  width: 20px;
   cursor: pointer;
 }
 

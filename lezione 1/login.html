@@ -25,7 +25,7 @@
             <div class="input">
                 <input type="text" name="email" id="email" placeholder="Email*" class="email" required>
                 <input type="password" name="password" id="password" placeholder="Password*" class="password" required>
-                <img src="foto/eye_96692.png" id="eye-icon">
+                <img src="foto/eye_closed.png" id="eye-icon" class="eye_closed">
                 <script>
                     const passwordField = document.getElementById("password");
                     const eyeIcon = document.getElementById("eye-icon");
@@ -33,10 +33,12 @@
                     eyeIcon.addEventListener("click", () => {
                     if (passwordField.type === "password") {
                         passwordField.type = "text";
-                        eyeIcon.src = "open-eye.png";
+                        eyeIcon.src = "foto/eye.png";
+                        eyeIcon.className = "eye";
                     } else {
                         passwordField.type = "password";
-                        eyeIcon.src = "closed-eye.png";
+                        eyeIcon.src = "foto/eye_closed.png";
+                        eyeIcon.className = "eye_closed";
                     }
                     });
                     
@@ -45,7 +47,7 @@
 
             </div>
 
-            <p class="forgot"><a href="">Password dimenticata</a> ?</p>
+            <p class="forgot"><a href="">Password dimenticata?</a></p>
             <input type="checkbox" id="memodata" name="memodata" value="memodata" class="ck_memo" >
             <label for="memodata" > Memorizza i dati</label>
 
@@ -62,7 +64,7 @@
                 }
             </script>
 
-            <br><input type="submit" value="Conferma">
+            <br><button class="confirm"><a href="logout.html" class="conferma">Conferma</a></button>
             <p class="another">Oppure accedi con</p>
 
             <div class="icons">
