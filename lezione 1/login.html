@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="conteiner">
         <video muted autoplay loop class="videofullscreen">
             <source src="sfondo/video immagini login.mp4" type="video/mp4">
@@ -46,19 +48,36 @@
             <p class="forgot"><a href="">Password dimenticata</a> ?</p>
             <input type="checkbox" id="memodata" name="memodata" value="memodata" class="ck_memo" >
             <label for="memodata" > Memorizza i dati</label>
+
+
+            <div class="popup" onclick="myFunction()"><img src="foto/Info_chiara.png" alt="info" width="10" height="10" class="info">
+                <span class="popuptext" id="myPopup">Salva email e password per i prossimi accessi</span>
+            </div>
+
+
+            <script>
+                function myFunction() {
+                    var popup = document.getElementById("myPopup");
+                    popup.classList.toggle("show");
+                }
+            </script>
+
             <br><input type="submit" value="Conferma">
-
-
-
             <p class="another">Oppure accedi con</p>
 
             <div class="icons">
-                <a href="https://it-it.facebook.com/"><img src="foto/face.png" alt="face"  width="30" height="30" class="face"></a>
-                <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&ifkv=AWnogHfdZrkG7ceUPxxvPISSmjLT4mKI1zJbSqlIvTMCyiNmD1h4mBM2AeQPzWpoMMLYkDStQgDoMg&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="foto/google.png" alt="google" width="30" height="30"  class="google"></a>
-                <a href="https://www.icloud.com/mail"><img src="foto/apple.png" alt="apple" width="27" height="33"  class="apple"></a>
+                <a href="https://it-it.facebook.com/"><img src="foto/facebook.png" alt="face" width="30" height="30"
+                        class="face"></a>
+                <a
+                    href="https://accounts.google.com/ServiceLogin/identifier?elo=1&ifkv=AWnogHfdZrkG7ceUPxxvPISSmjLT4mKI1zJbSqlIvTMCyiNmD1h4mBM2AeQPzWpoMMLYkDStQgDoMg&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img
+                        src="foto/google.png" alt="google" width="30" height="30" class="google"></a>
+                <a href="https://www.icloud.com/mail"><img src="foto/apple.png" alt="apple" width="27" height="33"
+                        class="apple"></a>
             </div>
-            
+
         </form>
     </div>
+
 </body>
+
 </html>
