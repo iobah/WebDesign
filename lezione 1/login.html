@@ -22,7 +22,19 @@
 
             <div class="input">
                 <input type="text" name="email" id="email" placeholder="Email*" class="email" required>
-                <input type="password" name="password" id="password" placeholder="Password*" class="password" required><img src="foto/eye_96692.png" alt="eye"  width="21" height="11" class="eye">
+                <input type="password" name="password" id="password" placeholder="Password*" class="password" required>
+                <input type="image" src="foto/eye_96692.png" alt="eye"  width="21" height="11" class="eye" onclick="showPwd()" value="">
+                <script>
+                    function showPwd() {
+                        var myInput = document.getElementById("password");
+                        if (myInput.type === "password") {
+                            myInput.type = "text";
+                        } else {
+                            myInput.type = "password";
+                        }
+                    }
+                    
+                </script>
             </div>
 
             <p class="forgot"><a href="">Password dimenticata</a> ?</p>
