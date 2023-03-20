@@ -10,13 +10,13 @@ body{
     width: 138px;
     height: 27px;
     opacity: 1;
-    transform: translate(0%, 0%);
+    transform: translate(0%, -230%);
     margin-left: 140px;
     margin-top: 160px;
 }
 
 .exit{
-    transform: translate(1200%, 0%);
+    transform: translate(1000%, -160%);
     background: transparent;
     border: none;
     height: 40px;
@@ -30,7 +30,7 @@ a{
 }
 
 h1{
-    transform: translate(160%, 180%);
+    transform: translate(150%, 180%);
     width: 387px;
     height: 72px;
     text-align: center;
@@ -40,8 +40,8 @@ h1{
 }
 
 p{
-    transform: translate(6%, 90%);
-    width: 1530px;
+    transform: translate(10%, 90%);
+    width: 1300px;
     height: 71px;
     /* UI Properties */
     text-align: center;
