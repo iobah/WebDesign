@@ -31,7 +31,20 @@ a:hover{
     border-radius: 5px;
     background-color: #fff;
     margin-left: 20px;
-  }
+}
+
+.form-register {
+  transform: translate(250%, -55%);
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+
+
   
 .login{
   margin-top: 20px;
@@ -53,6 +66,18 @@ a:hover{
   color: #575757;
 }
 
+.form-register input[type="text"],
+.form-register input[type="password"] {
+  width: 92%;
+  padding: 12px 20px;
+  text-align: left;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin-left: 13px;
+}
 
 .form input[type="text"],
 .form input[type="password"] {
@@ -110,6 +135,30 @@ a:hover{
   text-decoration: none;
   color:#fff;
 }
+
+.conferma:hover{
+  text-decoration: none;
+  color:#fff;
+}
+
+.form-register .confirm{
+  width: 92%;
+  background-color: #005EEB;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 14px;
+  font-weight: bolder;
+}
+  
+.form-register .confirm:hover{
+  background-color:#004bbb;
+}
+
 
 
 
