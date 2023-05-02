@@ -1,0 +1,1 @@
+Fare un sito per caricare curriculum utilizzando airtable come database
